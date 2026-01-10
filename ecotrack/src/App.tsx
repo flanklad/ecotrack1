@@ -4,7 +4,14 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const arr=[1,2,3,4,5];
+  const doubleArr=arr.map(num=>num*2);
+  const filteredArr=arr.filter(num=>num%2===0);
+  const red =arr.reduce((acc,num)=>acc+num,0);
+  console.log(red);
+  console.log(filteredArr);
+  const [count, setCount] = useState(0);
+  console.log(doubleArr);
 
   return (
     <>
